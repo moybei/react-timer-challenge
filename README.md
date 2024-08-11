@@ -33,3 +33,8 @@ This project was developed as a practice to get hands-on experience with the fol
 - **`createPortal`:** Used for rendering child components into a DOM node that exists outside the DOM hierarchy of the parent component.
 - **`useState`:** Essential for managing state within functional components.
 
+## Try out the challenge here!
+https://moybei.github.io/react-timer-challenge/
+
+Enjoy!
+
