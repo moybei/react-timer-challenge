@@ -12,6 +12,9 @@ const ResultModal =  forwardRef(function ResultModal({ targetTime, remainingTime
     return {
       open() {
         dialog.current.showModal();
+      },
+      close() {
+        dialog.current.close();
       }
     };
   })
@@ -27,9 +30,9 @@ const ResultModal =  forwardRef(function ResultModal({ targetTime, remainingTime
       <p>
         You stopped the timer with <strong>{timeLeft} seconds left.</strong>
       </p>
-      <form onSubmit={onReset}>
-        <button>Close</button>
-      </form>
+      <div id="close-button">
+        <button onClick={onReset}>Close</button>
+      </div>
     </dialog>,
     document.getElementById("modal")
   );

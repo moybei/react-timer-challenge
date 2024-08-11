@@ -16,6 +16,7 @@ export default function TimerChallenge({ title, targetTime }) {
 
   function handleReset() {
     setRemainingTime(targetTime * 1000);
+    dialog.current.close();
   }
 
   function handleStart() {
